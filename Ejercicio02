@@ -1,0 +1,11 @@
+texto = input()
+
+h = texto.split(' ')[0]
+v0 = texto.split(' ')[1]
+g = 9.8
+
+v = (v0**2)+(2*g*h)
+vf = np.sqrt(v)
+theta = np.arctan(v0/vf)
+
+print(np.round((theta*180)/np.pi,1))
